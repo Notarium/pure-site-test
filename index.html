@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bootsteam/bootsteam.css">
+    <link rel="stylesheet" href="style/main.css">
+
+</head>
+
+<body>
+    <div id="content">
+        <h1 id="title-line"></h1>
+        <div id="headline">
+            
+            <button class="btn btn-info" onclick="refresh()">刷新</button>
+            <!-- <button class="btn btn-info" onclick="showSubmitOverlay()">切换测试</button> -->
+        </div>
+        <table class="table table-striped">
+            <tbody id="date-table">
+            
+            </tbody>
+        </table>
+        <div id="overlay" class="card text-white bg-info">
+            <div class="card-header">提交 </div>
+            <div class="card-body">
+                <div id="overlay-text"></div>
+                <button class="btn btn-success" onclick="submit()">提交</button>
+                <button class="btn btn-success" onclick="hideSubmitOverlay()">取消</button>
+
+            </div>
+
+        </div>
+        <input id="dummy">
+    </div>
+
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
